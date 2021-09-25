@@ -1,0 +1,81 @@
+* {
+  text-align: center;
+}
+
+@font-face {
+  font-family: Lyno;
+  src: url("Fonts/LynoJean.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lyno;
+  src: url("Fonts/LynoWalt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lyno;
+  src: url("Fonts/LynoUlys.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lyno;
+  src: url("Fonts/LynoStan.ttf") format("truetype");
+}
+
+body {
+  background-color: lime;
+}
+
+#title {
+  text-align: center;
+  color: #ff1493;
+  font-family: LynoJean;
+  font-size: 10vh;
+  mix-blend-mode:difference;
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  bottom: 0px;
+  margin-top: 100% animation: mymove 2s infinite;
+  -webkit-animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, -50px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+#intro {
+  color: #ff1493;
+  font-family: LynoJean;
+  font-size: 2.5vh;
+  margin-top: 30%
+}
+
+#chorus {
+  display: block;
+  width: auto;
+  height: auto;
+  background: url("IMG_6986.jpg");
+  background-repeat: repeat-x;
+  background-position: top;
+  color: #ff1493;
+  font-family: LynoWalt;
+  font-size: 2.5vh;
+}
+
+#verse {
+  color: #ff1493;
+  font-family: LynoJean;
+  font-size: 2.5vh;
+  margin-bottom: 30%
+}
